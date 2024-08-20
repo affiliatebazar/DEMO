@@ -45,6 +45,7 @@ const initWebRouter = (app) => {
     router.get('/wallet/rechargerecord', middlewareController, homeController.rechargerecordPage);
     router.get('/wallet/withdrawalrecord', middlewareController, homeController.withdrawalrecordPage);
     router.get('/wallet/addBank', middlewareController, homeController.addBank);
+    router.get("/wallet/transactionhistory", middlewareController, homeController.transactionhistoryPage)
 
     router.get('/wallet/paynow/manual_upi', middlewareController, paymentController.initiateManualUPIPayment);
     router.get('/wallet/paynow/manual_usdt', middlewareController, paymentController.initiateManualUSDTPayment);
